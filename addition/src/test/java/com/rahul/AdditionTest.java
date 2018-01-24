@@ -1,7 +1,15 @@
+import com.rahul.Addition;
+import org.junit.Test;
+
+
 public class AdditionTest {
-    public static void main(String args[])
+    @Test
+    public void testAdd()
     {
-        Addition a = new Addition();
-        a.add(10,20);
+        int a=10;
+        int b=20;
+        Addition addobj = new Addition();
+        int c = addobj.add(a,b);
+        System.out.println(c);
     }
 }
